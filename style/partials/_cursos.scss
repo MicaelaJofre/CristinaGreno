@@ -32,9 +32,26 @@
     }
 }
 
+.cursos {
+    margin: $marginTexty 0 $marginTexty 0;
+    >hr {
+        color: #29274b;
+        height: 3px;
+        width: 100%;
+        margin-left: 5em;
+        margin-right: 5em;
+        box-shadow: 1px 1px 5px 1px $lila;
+    }
+}
+.cardCurso {
+    &__img {
+        width: 25em;
+        height: auto;
+        box-shadow: $shadowBox1;
+    }
+}
 
-
-/*--cards courses--*/
+/*--cards courses
 .cardCurso{
     .card {
         max-width: 20em;
@@ -85,7 +102,7 @@
         }
 }
 }
-
+--*/
 
 /*--comments--*/
 

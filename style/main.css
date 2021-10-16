@@ -448,62 +448,79 @@
   }
 }
 
-/*--cards courses--*/
-.cardCurso .card {
-  max-width: 20em;
-  height: 20em;
-  margin: 3em 1em;
-  padding: 1em;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  background: #615ba565;
-  border: none;
+.cursos {
+  margin: 7em 0 7em 0;
 }
 
-.cardCurso .card .imgContainer {
-  height: 15em;
-  top: -50px;
-  left: 10px;
-  z-index: 1;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+.cursos > hr {
+  color: #29274b;
+  height: 3px;
+  width: 100%;
+  margin-left: 5em;
+  margin-right: 5em;
+  -webkit-box-shadow: 1px 1px 5px 1px #6F69AC;
+          box-shadow: 1px 1px 5px 1px #6F69AC;
 }
 
-.cardCurso .card .imgContainer img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.cardCurso__img {
+  width: 25em;
+  height: auto;
+  -webkit-box-shadow: 1px 1px 10px #000;
+          box-shadow: 1px 1px 10px #000;
 }
 
-.cardCurso .card:hover {
-  height: 35em;
+/*--cards courses
+.cardCurso{
+    .card {
+        max-width: 20em;
+        height: 20em;
+        margin: 3em 1em;
+        padding: 1em;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+        background: $fondoLila;
+        border: none;
+    
+        .imgContainer{
+        height: 15em;
+        top: -50px;
+        left: 10px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    
+        img {
+            max-width: 100%;
+            object-fit:cover;
+            }
+        } 
+        
+        &:hover {
+            height: 35em;
+        }  
+    
+        .content {
+        margin-top: -110px;
+        padding-top: 1em;
+        text-align: center;
+        color: #333;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease-in-out;
+        overflow: hidden;
+        } 
+    
+        &:hover .content {
+        visibility: visible;
+        opacity: 1;
+        margin-top: -5px;
+        transition-delay: 0.3s;
+        height: 40em;
+        }
 }
-
-.cardCurso .card .content {
-  margin-top: -110px;
-  padding-top: 1em;
-  text-align: center;
-  color: #333;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  overflow: hidden;
 }
-
-.cardCurso .card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -5px;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-  height: 40em;
-}
-
+--*/
 /*--comments--*/
 .comments {
   background-image: url(../imagenes/swirl_pattern.png);
