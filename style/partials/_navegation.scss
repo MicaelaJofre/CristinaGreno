@@ -1,0 +1,33 @@
+@import "./mixins";
+.header {
+    @include breakpoint(mobile) {
+        background: #6f69acef;
+    }
+    @include breakpoint(laptop) {
+        background: $fondoNav;
+    }
+    @include breakpoint(desktop) {
+        background: $fondoNav;
+    }
+}
+.navbar-brand {
+    font-family: $familyLogo;
+    transition: .5s;
+}
+.navbar-toggler {
+    background: $lila;
+    transition: .5s;
+}
+.navbar-nav {
+    font-size: 1.7em;
+    transition: .5s;
+}
+.navbar-light {
+    .navbar-nav .nav-link:hover, .navbar-brand:hover {
+        color: $verde !important;
+    }
+}
+.navbar-toggler:hover {
+    background: $shadowLila;
+}
+

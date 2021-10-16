@@ -1,0 +1,16 @@
+.body {
+    font-family: $fontPrincipal;
+    background-image: url(../imagenes/white_wall.png);
+    color:$principal;  
+    .header {
+        font-size: 62.5%;
+    }  
+}
+.bodyCurriculum {
+    background-image: url(../imagenes/white_wall.png);
+    font-family: $fontPrincipal;
+    color: $principal;
+    .header{
+        font-size: 62.5%;
+    }
+}

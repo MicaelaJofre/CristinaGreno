@@ -1,0 +1,48 @@
+.footerIndex {
+    margin-top: $marginTextx;
+} 
+.footer__netLink {
+    list-style: none;
+    .linkIcon__a {
+        text-decoration: none;
+        color: $principal;
+        transition: .5s;
+    }
+    .linkIcon__a:hover {
+        color: $verde;
+    }
+}
+.footerP{
+    background: $principal;
+    .fooText {
+        text-align: center;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 7em;
+            height: auto;
+            padding: 1em;
+        }
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        >span {  
+            font-size: .7em;
+            font-weight: lighter;          
+            > i {
+                font-size: 1.2em;
+                padding-right: .5em;
+                text-align: center;
+                margin-top: 2em;
+            }
+            
+        }
+        
+    }
+}
+
+
+

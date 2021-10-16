@@ -1,0 +1,53 @@
+@import "./mixins";
+
+@each $seccion in Index, Galeria, Cursos, Recom {
+    
+    .heroImg#{$seccion}{
+        color:$principal;
+        &__img1 {
+            background-image: url(../imagenes/hero/#{$seccion}.png);
+            background-size: cover;
+            background-attachment: fixed;
+            color: $colorh2;
+            font-family: $fontPrincipal;
+            @include breakpoint(mobile) {
+                height: 45vh;
+                text-align: center;
+            }
+            @include breakpoint(laptop) {
+                height: 70vh;
+                text-align: center;
+            }
+            @include breakpoint(desktop) {
+                height: 100vh;
+                text-align: start;
+            }
+        }
+        &__img1--subt {
+            overflow: hidden;
+            -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @-webkit-keyframes slide-left {
+                0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                100% {
+                    -webkit-transform: translateX(-30px);
+                    transform: translateX(-30px);
+                }
+            }
+            @keyframes slide-left {
+                0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                100% {
+                    -webkit-transform: translateX(-30px);
+                    transform: translateX(-30px);
+                }
+            }
+        }
+        
+    }
+}

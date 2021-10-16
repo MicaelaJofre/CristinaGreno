@@ -1,0 +1,137 @@
+.mainContact {
+    font-family: $fontPrincipal;
+    background-image: url(../imagenes/Cristina/pintura8.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact__title--text {
+    margin-top: 7em;
+    color: $colorh2;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @-webkit-keyframes slide-left {
+                0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                100% {
+                    -webkit-transform: translateX(-30px);
+                    transform: translateX(-30px);
+                }
+            }
+            @keyframes slide-left {
+                0% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                }
+                100% {
+                    -webkit-transform: translateX(-30px);
+                    transform: translateX(-30px);
+                }
+            }
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+    @include breakpoint(laptop) {
+        display: block;
+    }
+    @include breakpoint(desktop) {
+        display: block;
+    }
+
+}
+
+//form
+.contForm {
+    @include breakpoint(mobile) {
+        margin-top: 3em;
+    }
+    @include breakpoint(laptop) {
+        margin-top: 3em;
+    }
+    &__form, &__aside {
+        background: rgba(0, 0, 0, 0.241);
+        padding: 1em;
+        margin-top: 3em;
+        margin-bottom: 5em;
+        color: $white;
+    }
+    &__form--inp > {
+        input, textarea {
+            font-family: $fontPrincipal;
+            width: 95%;
+            padding: 1em;
+            margin: .5em;
+            background: $principal;
+            border: none;
+            border-bottom: 2px solid $lila;
+            resize: none;
+            border-radius: .2em;
+            box-shadow: $shadowBox2;
+            outline: none;
+            color: $white;
+        }
+    }
+    .formBottonReset {
+        background: transparent;
+        border: 1px solid $principal;
+        color: $white;
+        padding: .5em 5em;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: .2em;
+        cursor: pointer;
+        transition: .5s;
+        &:hover {
+            background: rgba(51, 51, 51, 0.61);
+        }
+    }
+    .formBotton {
+        background: $lila;
+        text-transform: uppercase;
+        font-family: $fontPrincipal;
+        width: 95%;
+        padding: 1em;
+        margin: .5em;
+        box-shadow: $shadowBox2;
+        color: $white;
+        text-align: center;
+        border: none;
+        border-radius: .2em;
+        cursor: pointer;
+        transition: .5s;
+        &:hover {
+            background: $shadowLila;
+        }
+    }
+}
+//aside
+.contForm__aside--title {
+    h3 {
+        @include breakpoint(mobile) {
+            display: block;
+        }
+        @include breakpoint(laptop) {
+            display: none;
+        }
+        @include breakpoint(desktop) {
+            display: none;
+        }
+    }
+}
+.socialNetwork {
+    padding: 1em;
+    > a {
+        > i {
+            font-size: 1.5em;
+            padding-right: .5em;
+            text-align: center;
+        }
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            color: $lila;
+        }
+    }
+}
