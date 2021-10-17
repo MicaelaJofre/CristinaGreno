@@ -32,78 +32,48 @@
     }
 }
 
+/*--card cursos--*/
+
 .cursos {
-    margin: $marginTexty 0 $marginTexty 0;
+    margin-top: $marginTexty;
     >hr {
         color: #29274b;
         height: 3px;
-        width: 100%;
-        margin-left: 5em;
-        margin-right: 5em;
+        width: 90%;
         box-shadow: 1px 1px 5px 1px $lila;
+        @include breakpoint(mobile) {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        @include breakpoint(laptop) {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        @include breakpoint(desktop) {
+            margin-left: 5em;
+            margin-right: 5em;
+        }
     }
 }
 .cardCurso {
     &__img {
-        width: 25em;
-        height: auto;
-        box-shadow: $shadowBox1;
+        >img {
+            box-shadow: $shadowBox1;
+        }
+    }
+    &__text {
+        line-height: $spaceLetters;
+        @include breakpoint(mobile) {
+            font-size: 1.2em; 
+        }
+        @include breakpoint(laptop) {
+            font-size: 1.2em; 
+        }
+        @include breakpoint(desktop) {
+            font-size: $font-text;
+        }
     }
 }
-
-/*--cards courses
-.cardCurso{
-    .card {
-        max-width: 20em;
-        height: 20em;
-        margin: 3em 1em;
-        padding: 1em;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-        transition: 0.3s ease-in-out;
-        background: $fondoLila;
-        border: none;
-    
-        .imgContainer{
-        height: 15em;
-        top: -50px;
-        left: 10px;
-        z-index: 1;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-    
-        img {
-            max-width: 100%;
-            object-fit:cover;
-            }
-        } 
-        
-        &:hover {
-            height: 35em;
-        }  
-    
-        .content {
-        margin-top: -110px;
-        padding-top: 1em;
-        text-align: center;
-        color: #333;
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transition: 0.3s ease-in-out;
-        overflow: hidden;
-        } 
-    
-        &:hover .content {
-        visibility: visible;
-        opacity: 1;
-        margin-top: -5px;
-        transition-delay: 0.3s;
-        height: 40em;
-        }
-}
-}
---*/
-
 /*--comments--*/
 
 .comments {
@@ -119,18 +89,6 @@
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*--comments--*/

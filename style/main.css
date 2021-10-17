@@ -42,7 +42,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:hover {
-  color: #95DAC1 !important;
+  color: #ffeba1c7 !important;
 }
 
 .navbar-toggler:hover {
@@ -448,79 +448,67 @@
   }
 }
 
+/*--card cursos--*/
 .cursos {
-  margin: 7em 0 7em 0;
+  margin-top: 7em;
 }
 
 .cursos > hr {
   color: #29274b;
   height: 3px;
-  width: 100%;
-  margin-left: 5em;
-  margin-right: 5em;
+  width: 90%;
   -webkit-box-shadow: 1px 1px 5px 1px #6F69AC;
           box-shadow: 1px 1px 5px 1px #6F69AC;
 }
 
-.cardCurso__img {
-  width: 25em;
-  height: auto;
+@media screen and (min-width: 320px) {
+  .cursos > hr {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cursos > hr {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cursos > hr {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
+
+.cardCurso__img > img {
   -webkit-box-shadow: 1px 1px 10px #000;
           box-shadow: 1px 1px 10px #000;
 }
 
-/*--cards courses
-.cardCurso{
-    .card {
-        max-width: 20em;
-        height: 20em;
-        margin: 3em 1em;
-        padding: 1em;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-        transition: 0.3s ease-in-out;
-        background: $fondoLila;
-        border: none;
-    
-        .imgContainer{
-        height: 15em;
-        top: -50px;
-        left: 10px;
-        z-index: 1;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-    
-        img {
-            max-width: 100%;
-            object-fit:cover;
-            }
-        } 
-        
-        &:hover {
-            height: 35em;
-        }  
-    
-        .content {
-        margin-top: -110px;
-        padding-top: 1em;
-        text-align: center;
-        color: #333;
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-        transition: 0.3s ease-in-out;
-        overflow: hidden;
-        } 
-    
-        &:hover .content {
-        visibility: visible;
-        opacity: 1;
-        margin-top: -5px;
-        transition-delay: 0.3s;
-        height: 40em;
-        }
+.cardCurso__text {
+  line-height: 1.8em;
 }
+
+@media screen and (min-width: 320px) {
+  .cardCurso__text {
+    font-size: 1.2em;
+  }
 }
---*/
+
+@media screen and (min-width: 768px) {
+  .cardCurso__text {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardCurso__text {
+    font-size: 0.9em;
+  }
+}
+
 /*--comments--*/
 .comments {
   background-image: url(../imagenes/swirl_pattern.png);
