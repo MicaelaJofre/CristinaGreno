@@ -1,6 +1,7 @@
 .footerIndex {
     margin-top: $marginTextx;
 } 
+
 .footer__netLink {
     list-style: none;
     .linkIcon__a {
@@ -9,10 +10,11 @@
         transition: .5s;
     }
     .linkIcon__a:hover {
-        color: $verde;
+        color: $yellow;
     }
 }
 .footerP{
+    box-shadow: $shadowBox1;
     background: $principal;
     .fooText {
         text-align: center;
@@ -21,7 +23,7 @@
         display: flex;
         justify-content: center;
         img {
-            width: 7em;
+            width: 9em;
             height: auto;
             padding: 1em;
         }
@@ -29,6 +31,7 @@
     .info {
         display: flex;
         justify-content: center;
+        line-height: $spaceLetters;
         >span {  
             font-size: .7em;
             font-weight: lighter;          
@@ -42,7 +45,33 @@
         }
         
     }
+    .maps {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        >iframe{
+            left:0;
+            top:25%;
+            height:60%;
+            width:100%;
+            position:absolute;
+        }
+    }
+    .infoContac {
+        .info {
+            >span {  
+                font-size: .7em;
+                font-weight: lighter;          
+                > i {
+                    font-size: 1.2em;
+                    padding-right: .5em;
+                    text-align: center;
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
 }
-
 
 

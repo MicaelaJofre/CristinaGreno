@@ -74,6 +74,25 @@
         }
     }
 }
+
+.btnCourse {
+    &__text {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    &__btn {
+        background: transparent;
+        color: $principal;
+        border: 1px solid $lila;
+        box-shadow: 1px 1px 5px $lila;
+        padding: .8em 3em;
+        &:hover {
+            background: $fondoLila;
+            border: none;
+            color: $white;
+        }
+    }
+}
 /*--comments--*/
 
 .comments {

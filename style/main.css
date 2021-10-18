@@ -351,6 +351,7 @@
   border: none;
   -webkit-transition: .5s;
   transition: .5s;
+  margin-bottom: 7em;
 }
 
 .btn:hover {
@@ -507,6 +508,26 @@
   .cardCurso__text {
     font-size: 0.9em;
   }
+}
+
+.btnCourse__text {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.btnCourse__btn {
+  background: transparent;
+  color: #333;
+  border: 1px solid #6F69AC;
+  -webkit-box-shadow: 1px 1px 5px #6F69AC;
+          box-shadow: 1px 1px 5px #6F69AC;
+  padding: .8em 3em;
+}
+
+.btnCourse__btn:hover {
+  background: #615ba565;
+  border: none;
+  color: #fff;
 }
 
 /*--comments--*/
@@ -854,7 +875,7 @@
 }
 
 .socialNetwork > a:hover {
-  color: #6F69AC;
+  color: #ffeba1c7;
 }
 
 .bodyCurriculum {
@@ -924,10 +945,12 @@
 }
 
 .footer__netLink .linkIcon__a:hover {
-  color: #95DAC1;
+  color: #ffeba1c7;
 }
 
 .footerP {
+  -webkit-box-shadow: 1px 1px 10px #000;
+          box-shadow: 1px 1px 10px #000;
   background: #333;
 }
 
@@ -945,7 +968,7 @@
 }
 
 .footerP .logo img {
-  width: 7em;
+  width: 9em;
   height: auto;
   padding: 1em;
 }
@@ -957,6 +980,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  line-height: 1.8em;
 }
 
 .footerP .info > span {
@@ -965,6 +989,33 @@
 }
 
 .footerP .info > span > i {
+  font-size: 1.2em;
+  padding-right: .5em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.footerP .maps {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.footerP .maps > iframe {
+  left: 0;
+  top: 25%;
+  height: 60%;
+  width: 100%;
+  position: absolute;
+}
+
+.footerP .infoContac .info > span {
+  font-size: .7em;
+  font-weight: lighter;
+}
+
+.footerP .infoContac .info > span > i {
   font-size: 1.2em;
   padding-right: .5em;
   text-align: center;
