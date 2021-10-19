@@ -452,6 +452,7 @@
 /*--card cursos--*/
 .cursos {
   margin-top: 7em;
+  overflow-x: hidden;
 }
 
 .cursos > hr {
@@ -486,6 +487,7 @@
 .cardCurso__img > img {
   -webkit-box-shadow: 1px 1px 10px #000;
           box-shadow: 1px 1px 10px #000;
+  width: 100%;
 }
 
 .cardCurso__text {

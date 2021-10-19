@@ -36,6 +36,7 @@
 
 .cursos {
     margin-top: $marginTexty;
+    overflow-x: hidden;
     >hr {
         color: #29274b;
         height: 3px;
@@ -59,6 +60,7 @@
     &__img {
         >img {
             box-shadow: $shadowBox1;
+            width: 100%;
         }
     }
     &__text {
