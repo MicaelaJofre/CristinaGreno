@@ -313,6 +313,10 @@
   font-size: 62.5%;
 }
 
+.body {
+  overflow-x: hidden;
+}
+
 .firtSection {
   color: #333;
 }
