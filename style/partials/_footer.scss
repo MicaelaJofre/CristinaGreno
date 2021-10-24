@@ -19,6 +19,9 @@
     background: $principal;
     .fooText {
         text-align: center;
+        letter-spacing: 5px;
+        font-size: x-small;
+        text-transform: uppercase;
     }
     .logo {
         display: flex;
@@ -33,6 +36,7 @@
         display: flex;
         justify-content: center;
         line-height: $spaceLetters;
+        letter-spacing: 5px;
         >span {  
             font-size: .7em;
             font-weight: lighter;          
