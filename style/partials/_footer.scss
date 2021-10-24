@@ -5,9 +5,10 @@
 .footer__netLink {
     list-style: none;
     .linkIcon__a {
-        text-decoration: none;
         color: $principal;
         transition: .5s;
+        font-size: 2em;
+        padding: .5em;
     }
     .linkIcon__a:hover {
         color: $yellow;
