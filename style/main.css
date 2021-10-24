@@ -314,7 +314,7 @@
 }
 
 .body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .firtSection {
@@ -351,15 +351,7 @@
 }
 
 .btn {
-  background: #6F69AC;
-  border: none;
-  -webkit-transition: .5s;
-  transition: .5s;
   margin-bottom: 7em;
-}
-
-.btn:hover {
-  background: #8a85bd;
 }
 
 @media screen and (min-width: 320px) {
@@ -697,11 +689,19 @@
           transform: scale(0.1);
 }
 
-.picture__info p {
+.picture__info .title {
   position: absolute;
   text-align: center;
   color: #fff;
   bottom: 30%;
+  right: 5%;
+}
+
+.picture__info .tipo {
+  font-size: small;
+  position: absolute;
+  color: #fff;
+  bottom: 20%;
   right: 5%;
 }
 

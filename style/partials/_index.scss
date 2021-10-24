@@ -1,6 +1,6 @@
 @import "./mixins";
 .body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .firtSection {
     color: $principal; 
@@ -24,12 +24,6 @@
 }
 
 .btn {
-    background: $lila;
-    border: none;
-    transition: .5s;
     margin-bottom: $marginTexty;
-    &:hover {
-        background:$shadowLila ;
-    } 
 }
 
