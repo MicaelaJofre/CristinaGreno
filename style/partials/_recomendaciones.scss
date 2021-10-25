@@ -1,36 +1,50 @@
 @import "./mixins";
-
-.recommend__title {
-    
+.recommend {
     @include breakpoint(mobile) {
-        margin-top: $marginTextx;  
+        margin-top: $marginTextx;
+        margin-bottom: $marginTextx;
     }
     @include breakpoint(laptop) {
-        margin-top: $marginTextx;  
+        margin-top: $marginTextx;
+        margin-bottom: $marginTextx;
     }
     @include breakpoint(desktop) {
-        margin: $marginTexty $marginLyR;
+        margin-top: $marginTexty;
+        margin-bottom: $marginTexty;
     }
 }
-
-.recommend__text {
+.recoText {
     line-height: $spaceLetters;
-
+    padding: 1em;
     @include breakpoint(mobile) {
         font-size: 1.2em;
-        margin-top: $marginTextx;
     }
     @include breakpoint(laptop) {
         font-size: 1.2em;
-        margin-top: $marginTextx;  
     }
     @include breakpoint(desktop) {
         font-size: $font-text;
-        margin: $marginTextx $marginLyR $marginTexty $marginLyR;
+        margin: 3em;
     }
 }
 
-.gallRecom__conten--img {
-    max-width: 100%;
+.recoGalle__img {
+    height: auto;
     box-shadow: $shadowBox2;
+    @include breakpoint(mobile) {
+        max-width: 100%;
+    }
+    @include breakpoint(laptop) {
+        max-width: 100%;
+    }
+    @include breakpoint(desktop) {
+        width: 60vw;
+    }
+}
+.imgReco__expo {
+    >img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: $shadowBox2;
+    }
 }
