@@ -1,5 +1,6 @@
 @import "./mixins";
 .recommend {
+    overflow-x: hidden;
     @include breakpoint(mobile) {
         margin-top: $marginTextx;
         margin-bottom: $marginTextx;

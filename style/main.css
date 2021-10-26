@@ -358,6 +358,10 @@
   border: 5px solid #333;
 }
 
+.recommend {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 320px) {
   .recommend {
     margin-top: 2em;
