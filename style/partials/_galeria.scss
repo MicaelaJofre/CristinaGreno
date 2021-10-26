@@ -1,4 +1,9 @@
 @import "./mixins";
+.centrado {
+    text-align: center;
+    overflow-x: hidden;
+}
+/*--texto apertura--*/
 .obras__p {
     text-align: center;
     font-size: $font-text;
@@ -18,6 +23,7 @@
         margin-right: auto;
     }
 }
+/*--galeria--*/
 .gallery {    
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +53,8 @@
     @include breakpoint(desktop) {
         flex: 25%;
     }
-}     
+}    
+/*--cuadros--*/ 
 .picture {
     margin: 1em .5em;
     box-shadow: $shadowBox2;
@@ -100,5 +107,75 @@
         }
     }
 }   
+/*--navegador interno--*/
+#oleo:checked ~ #galeria > .contentPicture #acrilico, 
+#oleo:checked ~ #galeria > .contentPicture #mixto, 
+#oleo:checked ~ #galeria > .contentPicture #acuarela, 
+#oleo:checked ~ #galeria > .contentPicture #tiza-pastel{
+    display: none;
+}
+
+#acrilico:checked ~ #galeria > .contentPicture #oleo, 
+#acrilico:checked ~ #galeria > .contentPicture #mixto, 
+#acrilico:checked ~ #galeria > .contentPicture #acuarela, 
+#acrilico:checked ~ #galeria > .contentPicture #tiza-pastel {
+    display: none;
+}
+
+#mixto:checked ~ #galeria > .contentPicture #oleo, 
+#mixto:checked ~ #galeria > .contentPicture #acrilico, 
+#mixto:checked ~ #galeria > .contentPicture #acuarela, 
+#mixto:checked ~ #galeria > .contentPicture #tiza-pastel {
+    display: none;  
+}
+#acuarela-tiza:checked ~ #galeria > .contentPicture #oleo, 
+#acuarela-tiza:checked ~ #galeria > .contentPicture #acrilico, 
+#acuarela-tiza:checked ~ #galeria > .contentPicture #mixto {
+    display: none;
+}
+
+
+.gallery__input {
+    visibility: hidden;
+    user-select: none;
+}
+
+.gallery__todo,
+.gallery__oleo,
+.gallery__acrilico,
+.gallery__mixto,
+.gallery__acuarela-tiza {
+    font-weight: bolder;
+    background: transparent;
+    color: #333;
+    border: 1px solid $lila;
+    box-shadow: 1px 1px 5px $lila;
+    padding: .8em 1.5em;  
+    cursor: pointer;
+    border-radius: .25rem;
+    user-select: none;
+    margin: .25em;
+    @include breakpoint(mobile) {
+        padding: 0.5em 1em;
+        margin: 0 .5em;
+        display: inline-grid;
+        display: grid;
+    }
+    @include breakpoint(laptop) {
+        padding: .8em 1.5em;
+        display: inline-block;  
+    }
+    @include breakpoint(desktop) {
+        padding: .8em 1.5em;  
+        display: inline-block;
+    }
+    &:hover {
+        background: #615ba565;
+        border: 1px solid transparent;
+        color: #fff;
+    }
+}
+
+
 
 

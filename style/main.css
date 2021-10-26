@@ -578,6 +578,12 @@
   font-size: 4.5em;
 }
 
+.centrado {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/*--texto apertura--*/
 .obras__p {
   text-align: center;
   font-size: 0.9em;
@@ -607,6 +613,7 @@
   }
 }
 
+/*--galeria--*/
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,6 +679,7 @@
   }
 }
 
+/*--cuadros--*/
 .picture {
   margin: 1em .5em;
   -webkit-box-shadow: 1px 1px 10px #333;
@@ -734,6 +742,110 @@
           transform: scale(1.15);
   -webkit-filter: blur(1.5px);
           filter: blur(1.5px);
+}
+
+/*--navegador interno--*/
+#oleo:checked ~ #galeria > .contentPicture #acrilico,
+#oleo:checked ~ #galeria > .contentPicture #mixto,
+#oleo:checked ~ #galeria > .contentPicture #acuarela,
+#oleo:checked ~ #galeria > .contentPicture #tiza-pastel {
+  display: none;
+}
+
+#acrilico:checked ~ #galeria > .contentPicture #oleo,
+#acrilico:checked ~ #galeria > .contentPicture #mixto,
+#acrilico:checked ~ #galeria > .contentPicture #acuarela,
+#acrilico:checked ~ #galeria > .contentPicture #tiza-pastel {
+  display: none;
+}
+
+#mixto:checked ~ #galeria > .contentPicture #oleo,
+#mixto:checked ~ #galeria > .contentPicture #acrilico,
+#mixto:checked ~ #galeria > .contentPicture #acuarela,
+#mixto:checked ~ #galeria > .contentPicture #tiza-pastel {
+  display: none;
+}
+
+#acuarela-tiza:checked ~ #galeria > .contentPicture #oleo,
+#acuarela-tiza:checked ~ #galeria > .contentPicture #acrilico,
+#acuarela-tiza:checked ~ #galeria > .contentPicture #mixto {
+  display: none;
+}
+
+.gallery__input {
+  visibility: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.gallery__todo,
+.gallery__oleo,
+.gallery__acrilico,
+.gallery__mixto,
+.gallery__acuarela-tiza {
+  font-weight: bolder;
+  background: transparent;
+  color: #333;
+  border: 1px solid #6F69AC;
+  -webkit-box-shadow: 1px 1px 5px #6F69AC;
+          box-shadow: 1px 1px 5px #6F69AC;
+  padding: .8em 1.5em;
+  cursor: pointer;
+  border-radius: .25rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: .25em;
+}
+
+@media screen and (min-width: 320px) {
+  .gallery__todo,
+  .gallery__oleo,
+  .gallery__acrilico,
+  .gallery__mixto,
+  .gallery__acuarela-tiza {
+    padding: 0.5em 1em;
+    margin: 0 .5em;
+    display: -ms-inline-grid;
+    display: inline-grid;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__todo,
+  .gallery__oleo,
+  .gallery__acrilico,
+  .gallery__mixto,
+  .gallery__acuarela-tiza {
+    padding: .8em 1.5em;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__todo,
+  .gallery__oleo,
+  .gallery__acrilico,
+  .gallery__mixto,
+  .gallery__acuarela-tiza {
+    padding: .8em 1.5em;
+    display: inline-block;
+  }
+}
+
+.gallery__todo:hover,
+.gallery__oleo:hover,
+.gallery__acrilico:hover,
+.gallery__mixto:hover,
+.gallery__acuarela-tiza:hover {
+  background: #615ba565;
+  border: 1px solid transparent;
+  color: #fff;
 }
 
 .mainContact {

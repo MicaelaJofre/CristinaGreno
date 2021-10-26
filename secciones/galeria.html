@@ -47,7 +47,7 @@
         </nav> 
     </header>
 
-    <main>
+    <main class="centrado">
 
         <!--hero-->
         <section class="container-fluid heroImgGaleria">            
@@ -60,161 +60,172 @@
         <section class="obras">
             <p class="obras__p">Las obras que encuentres en esta sección están a la venta y podrán ser enviadas a cualquier parte del mundo. Las piezas son empaquetadas con especial cuidado para que el traslado no dañe la pintura. Cada obra es exclusiva. Las consultas se pueden realizar por los diferentes canales o completando el formulario en la pestaña de contacto.</p>
         </section>  
-            
+
+        <!--navegador interno-->
+
+        <input type="radio" name="filtro" id="todo" class="gallery__input" checked>
+        <label for="todo" class="gallery__todo">Todo</label>
+        <input type="radio" name="filtro" id="oleo" class="gallery__input">
+        <label for="oleo" class="gallery__oleo">Oleo</label>
+        <input type="radio" name="filtro" id="acrilico" class="gallery__input">
+        <label for="acrilico" class="gallery__acrilico">Acrílico</label>
+        <input type="radio" name="filtro" id="mixto" class="gallery__input">
+        <label for="mixto" class="gallery__mixto">Mixta</label>
+        <input type="radio" name="filtro" id="acuarela-tiza" class="gallery__input">
+        <label for="acuarela-tiza" class="gallery__acuarela-tiza">Acuarela y Tiza pastel</label>
+
             <!--pinturas-->
-        <section class="gallery"> 
-            
+        <section class="gallery" id="galeria"> 
+        
             <!--Article pictures 1-->
-            <article class="contentPicture">
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura1.png" loading ="lazy" alt="acrílico">
+            <article class="contentPicture" id="col1">
+                <div class="picture" id="oleo">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura1.png" loading ="lazy" alt="óleo">
                     <div class="picture__info">
                         <p class="title">"Rosa Amarilla"</p>
                         <p class="tipo">Óleo 32 x 30cm</p>
                     </div>
                 </div>
-                <div class="picture">
+                <div class="picture" id="oleo">
                     <img class= "picture__img" src="../imagenes/Cristina/pintura2.png" loading ="lazy" alt="técnica mixta">
                     <div class="picture__info">
                         <p class="title">"León"</p>
                         <p class="tipo">Óleo 30 x 30cm</p>
                     </div>
                 </div> 
-                <div class="picture">
+                <div class="picture" id="oleo">
                     <img class="picture__img" src="../imagenes/Cristina/pintura3.png" loading ="lazy" alt="oleo">
                     <div class="picture__info">
                         <p class="title">"Pistilos"</p>
                         <p class="tipo">Óleo 50 x 50cm</p>
                     </div>
-                </div> 
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura4.png" loading ="lazy" alt="acuarela">
-                    <div class="picture__info">
-                        <p class="title">"Arena"</p>
-                        <p class="tipo">Óleo 30 x 30cm</p>
-                    </div>
-                </div> 
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura5.png" loading ="lazy" alt="técnica mixta">
-                    <div class="picture__info">
-                        <p class="title">"Bodegón"</p>
-                        <p class="tipo">Mixta 55 x 45cm</p>
-                    </div>
-                </div> 
-                <div class="picture">
+                </div>
+                <div class="picture" id="acrilico">
                     <img class="picture__img" src="../imagenes/Cristina/pintura10.png" loading ="lazy" alt="acrílico">
                     <div class="picture__info">
                         <p class="title">"Cascadas"</p>
                         <p class="tipo">Acrílico 55 x 70cm</p>
                     </div>
-                </div>
-                <div class="picture" >
-                    <img class="picture__img" src="../imagenes/Cristina/pintura11.png" loading ="lazy" alt="técnica mixta">
+                </div>                
+                <div class="picture" id="acuarela">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura19.png" loading ="lazy" alt="acuarela">
                     <div class="picture__info">
-                        <p class="title">"Venecia"</p>
-                        <p class="tipo">Acrílico 60 x 50cm</p>
+                        <p class="title">"Muchacho"</p>
+                        <p class="tipo">Acuarela 33 x 22cm</p>
                     </div>
-                </div> 
-                <div class="picture">
+                </div>      
+                <div class="picture" id="acrilico">
                     <img class="picture__img" src="../imagenes/Cristina/pintura17.png" loading ="lazy" alt="técnica mixta">
                     <div class="picture__info">
                         <p class="title">"Flores"</p>
                         <p class="tipo">Acrílico 50 x 40cm</p>
                     </div>
                 </div>
+                <div class="picture" id="mixto">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura31.png" loading ="lazy" alt="acrílico">
+                    <div class="picture__info">
+                        <p class="title">"Manzana"</p>
+                        <p class="tipo">Mixta 30 x 40cm</p>
+                    </div>
+                </div>
+                <div class="picture" id="mixto">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura35.png" loading ="lazy" alt="técnica mixta">
+                    <div class="picture__info">
+                        <p class="title">"Cafetera y manzanas"</p>
+                        <p class="tipo">Mixta 50 x 35cm</p>
+                    </div>
+                </div> 
             </article>
             <!--Article pictures 2-->
-            <article class="contentPicture">
-                <div class="picture">
+            <article class="contentPicture" id="col2">
+                <div class="picture" id="acuarela">
                     <img class="picture__img" src="../imagenes/Cristina/pintura21.png" loading ="lazy" alt="acuarela">
                     <div class="picture__info">
                         <p class="title">"Piernas"</p>
                         <p class="tipo">Acuarela 35 x 25cm</p>
                     </div>
                 </div> 
-                <div class="picture">
+                <div class="picture" id="acrilico">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura11.png" loading ="lazy" alt="técnica mixta">
+                    <div class="picture__info">
+                        <p class="title">"Venecia"</p>
+                        <p class="tipo">Acrílico 60 x 50cm</p>
+                    </div>
+                </div> 
+                <div class="picture" id="oleo">
                     <img class="picture__img" src="../imagenes/Cristina/pintura12.png" loading ="lazy" alt="acrílico">
                     <div class="picture__info">
                         <p class="title">"Bote rojo"</p>
                         <p class="tipo">Óleo 30 x 40cm</p>
                     </div>
                 </div>
-                <div class="picture">
+                <div class="picture" id="mixto">
                     <img class="picture__img" src="../imagenes/Cristina/pintura13.png" loading ="lazy" alt="acrílico">
                     <div class="picture__info">
                         <p class="title">"Calas"</p>
                         <p class="tipo">Mixta 30 x 40cm</p>
                     </div>
                 </div>  
-                <div class="picture">
+                <div class="picture" id="oleo">
                     <img class="picture__img" src="../imagenes/Cristina/pintura14.png" loading ="lazy" alt="técnica mixta">
                     <div class="picture__info">
                         <p class="title">"Chica de rojo"</p>
                         <p class="tipo">Óleo 50 x 40cm</p>
                     </div>
                 </div> 
-                <div class="picture">
+                <div class="picture" id="oleo">
                     <img class="picture__img" src="../imagenes/hero/Cursos.png" loading ="lazy" alt="técnica mixta">
                     <div class="picture__info">
                         <p class="title">"Pueblo norteño"</p>
                         <p class="tipo">Óleo 30 x 40cm</p>
                     </div>
                 </div> 
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura22.png" loading ="lazy" alt="oleo">
-                    <div class="picture__info">
-                        <p class="title">"Retrato"</p>
-                        <p class="tipo">Tiza pastel 20 x 30cm</p>
-                    </div>
-                </div> 
-                <div class="picture" >
+                <div class="picture" id="mixto">
                     <img class="picture__img" src="../imagenes/Cristina/pintura29.png" loading ="lazy" alt="acrílico">
                     <div class="picture__info">
                         <p class="title">"Tréptico"</p>
                         <p class="tipo">Mixta 30 x 40cm c/u</p>
                     </div>
                 </div>
-                </div> 
             </article>
             <!--Article pictures 3-->
-            <article class="contentPicture">  
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura19.png" loading ="lazy" alt="acuarela">
-                    <div class="picture__info">
-                        <p class="title">"Muchacho"</p>
-                        <p class="tipo">Acuarela 33 x 22cm</p>
-                    </div>
-                </div> 
-                </div> 
-                <div class="picture" >
+            <article class="contentPicture" id="col3">  
+                <div class="picture" id="oleo">
                     <img class="picture__img" src="../imagenes/Cristina/pintura25.png" loading ="lazy" alt="oleo">
                     <div class="picture__info">
                         <p class="title">"Flores y cerezas"</p>
                         <p class="tipo">Óleo 35 x 50cm</p>
                     </div>
                 </div>    
-                <div class="picture" >
+                <div class="picture" id="acrilico">
                     <img class="picture__img" src="../imagenes/Cristina/pintura26.png" loading ="lazy" alt="acrílico">
                     <div class="picture__info">
                         <p class="title">"Zul-kesa"</p>
                         <p class="tipo">Acrílico 30 x 30cm</p>
                     </div>
-                </div> 
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura27.png" loading ="lazy" alt="acrílico">
-                    <div class="picture__info">
-                        <p class="title">"Cueva"</p>
-                        <p class="tipo">Acrílico 20 x 30cm</p>
-                    </div>
-                </div>
-                <div class="picture">
+                </div>                
+                <div class="picture" id="oleo">
                     <img class="picture__img" src="../imagenes/Cristina/pintura28.png" loading ="lazy" alt="técnica mixta">
                     <div class="picture__info">
                         <p class="title">"Retrato"</p>
                         <p class="tipo">Óleo 20 x 30cm</p>
                     </div>
                 </div>
-                <div class="picture" >
+                <div class="picture" id="mixto">
+                    <img class="picture__img" src="../imagenes/hero/Galeria.png" loading ="lazy" alt="acrílico">
+                    <div class="picture__info">
+                        <p class="title">"Ola"</p>
+                        <p class="tipo">Mixta 20 x 30cm</p>
+                    </div>
+                </div>
+                <div class="picture" id="oleo">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura4.png" loading ="lazy" alt="acuarela">
+                    <div class="picture__info">
+                        <p class="title">"Arena"</p>
+                        <p class="tipo">Óleo 30 x 30cm</p>
+                    </div>
+                </div> 
+                <div class="picture" id="acuarela">
                     <img class="picture__img" src="../imagenes/Cristina/pintura18.png" loading ="lazy" alt="acuarela">
                     <div class="picture__info">
                         <p class="title">"Puente"</p>
@@ -222,59 +233,52 @@
                     </div>
                 </div>  
             </article>
-            <article class="contentPicture">     
-                <div class="picture">
+            <!--Article pictures 4-->
+            <article class="contentPicture" id="col4">     
+                <div class="picture" id="oleo">
                     <img class="picture__img" src="../imagenes/Cristina/pintura30.png" loading ="lazy" alt="cuadro en acrílico">
                     <div class="picture__info">
                         <p class="title">"Violeta"</p>
                         <p class="tipo">Óleo 30 x 40cm</p>
                     </div>
-                </div> 
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura31.png" loading ="lazy" alt="acrílico">
-                    <div class="picture__info">
-                        <p class="title">"Manzana"</p>
-                        <p class="tipo">Mixta 30 x 40cm</p>
-                    </div>
-                </div>
-                <div class="picture" >
-                    <img class="picture__img" src="../imagenes/Cristina/pintura32.png" loading ="lazy" alt="técnica mixta">
-                    <div class="picture__info">
-                        <p class="title">"Abstracto"</p>
-                        <p class="tipo">Óleo 100 x 140cm</p>
-                    </div>
-                </div>
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/hero/Galeria.png" loading ="lazy" alt="acrílico">
-                    <div class="picture__info">
-                        <p class="title">"Ola"</p>
-                        <p class="tipo">Mixta 20 x 30cm</p>
-                    </div>
-                </div>   
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura36.png" loading ="lazy" alt="técnica mixta">
-                    <div class="picture__info">
-                        <p class="title">"Gallo"</p>
-                        <p class="tipo">Óleo 20 x 30cm</p>
-                    </div>
-                </div>
-                <div class="picture" >
+                </div>                
+                <div class="picture" id="mixto">
                     <img class="picture__img" src="../imagenes/Cristina/pintura34.png" loading ="lazy" alt="oleo">
                     <div class="picture__info">
                         <p class="title">"Gata curiosa"</p>
                         <p class="tipo">Mixta 36 x 36cm</p>
                     </div>
                 </div>  
-                <div class="picture">
-                    <img class="picture__img" src="../imagenes/Cristina/pintura35.png" loading ="lazy" alt="técnica mixta">
+                <div class="picture" id="oleo">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura32.png" loading ="lazy" alt="técnica mixta">
                     <div class="picture__info">
-                        <p class="title">"Cafetera y manzanas"</p>
-                        <p class="tipo">Mixta 50 x 35cm</p>
+                        <p class="title">"Abstracto"</p>
+                        <p class="tipo">Óleo 100 x 140cm</p>
+                    </div>
+                </div>
+                <div class="picture" id="acrilico">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura27.png" loading ="lazy" alt="acrílico">
+                    <div class="picture__info">
+                        <p class="title">"Cueva"</p>
+                        <p class="tipo">Acrílico 20 x 30cm</p>
+                    </div>
+                </div>
+                <div class="picture" id="tiza-pastel">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura22.png" loading ="lazy" alt="oleo">
+                    <div class="picture__info">
+                        <p class="title">"Retrato"</p>
+                        <p class="tipo">Tiza pastel 20 x 30cm</p>
                     </div>
                 </div> 
+                <div class="picture" id="oleo">
+                    <img class="picture__img" src="../imagenes/Cristina/pintura36.png" loading ="lazy" alt="técnica mixta">
+                    <div class="picture__info">
+                        <p class="title">"Gallo"</p>
+                        <p class="tipo">Óleo 20 x 30cm</p>
+                    </div>
+                </div>                
             </article>    
         </section>
-
     </main>
     
     <!--Footer-->
