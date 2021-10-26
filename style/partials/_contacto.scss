@@ -56,6 +56,15 @@
         margin-top: 3em;
         margin-bottom: 5em;
         color: $white;
+        @include breakpoint(mobile) {
+            margin-bottom: 0;
+        }
+        @include breakpoint(laptop) {
+            margin-bottom: 3em;
+        }
+        @include breakpoint(desktop) {
+            margin-bottom: 5em;
+        }
     }
     &__form--inp > {
         input, textarea {
@@ -120,6 +129,7 @@
         }
     }
 }
+//datos y logo
 .socialNetwork {
     padding: 1em;
     > a {

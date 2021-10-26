@@ -4,23 +4,24 @@
 }
 .firtSection {
     color: $principal; 
+    &__p--text {
+        line-height: $spaceLetters;
+        @include breakpoint(mobile) {
+            font-size: 1.2em;
+        }
+        @include breakpoint(laptop) {
+            font-size: 1.2em;
+        }
+        @include breakpoint(desktop) {
+            font-size: $font-text;
+        }
+    }
     
-}
-.firtSection__p--text {
-    line-height: $spaceLetters;
-    @include breakpoint(mobile) {
-        font-size: 1.2em;
-    }
-    @include breakpoint(laptop) {
-        font-size: 1.2em;
-    }
-    @include breakpoint(desktop) {
-        font-size: $font-text;
-    }
 }
 .imgFru {
     box-shadow: $shadowBox1;
     object-fit:cover;
+    border: 5px solid $principal;
 }
 
 

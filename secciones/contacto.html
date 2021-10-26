@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="../style/main.css">
 </head>
 
-<body class="contact">    
+<body class="contact">  
+    <!--navegador-->    
     <header class="header container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light p-2">
             <div class="container-fluid w-100">
@@ -46,16 +47,20 @@
     
     <main class="container-fluid mainContact">
         <div class="container contact">
+
+            <!--title-->
             <section class="row d-flex flex-brap align-items-center justify-content-center contact__title">
                 <div class="col-10 text-center contact__title--text">
                     <h2 class="display-1 overflow-hidden">Contacto</h2>
                 </div>
             </section>
+
+            <!--form y aside-->
             <section class="row d-flex flex-brap justify-content-center contForm">
                 <!--form-->
                 <form action="" class="col-12 col-lg-6 order-lg-first order-last contForm__form">
                     <div class="contForm__form--inp">
-                        <input type="text" name="nombre" id="nombre"  placeholder="Nombre">
+                        <input type="text" name="nombre" id="nombre"  placeholder="Nombre" required pattern="[A-Za-z0-9]{5,30}">
                     </div>                        
                     
                     <div class="contForm__form--inp">
@@ -63,11 +68,11 @@
                     </div>
                     
                     <div class="contForm__form--inp">
-                        <input  type="tel" placeholder=" Teléfono" title="cod-area sin el '0' + número sin el '15'"  required>
+                        <input  type="tel" placeholder=" Teléfono" required pattern="[0-9]+" title="cod-area sin el '0' + número sin el '15'">
                     </div>
                     
                     <div class="contForm__form--inp">
-                        <textarea name="mensaje" id="mensaje" rows="15"placeholder="Escribe aquí tu consulta..."></textarea>
+                        <textarea name="mensaje" id="mensaje" rows="15" placeholder="Escribe aquí tu consulta..." required></textarea>
                     </div> 
                     
                     <div class="contForm__form--reset d-flex justify-content-center" >
@@ -77,29 +82,34 @@
                     <div class="contForm__form--btn" >
                         <input class="formBotton" type="submit" value="Enviar">
                     </div>
-                </form>            
-                <!--aside-->
+                </form>  
+
+                <!--texto e iconos de redes-->
                 <aside class="col-12 col-lg-6 text-center text-lg-start contForm__aside">
                     <div class="d-flex flex-wrap justify-content-center p-4 contForm__aside--title">
                         <h3 class="display-5 overflow-hidden">Contacto</h3>
                     <p class="p-md-5 p-1 contForm__aside--text">Para cotizar o encargar una obra, por favor, completá el formulario y me contactaré a la brevedad. Muchas gracias!<br>El horario de atención es de 9:00 a.m. a 18:00 p.m.</h4>
-                    <div class="contForm__aside--netw">
-                        <P class="socialNetwork"><a href="https://www.facebook.com/cristina.greno.7" target=”_blank”><i class="fab fa-facebook"></i><strong>Facebook</strong></a></P>
-                        <P class="socialNetwork"><a href="https://api.whatsapp.com/send?phone=5492614703937" target=”_blank”><i class="fab fa-whatsapp"></i><strong>whatsApp</strong></a></P>
-                        <P class="socialNetwork"><a href="https://instagram.com/cristinagreno?utm_medium=copy_link" target=”_blank”><i class="fab fa-instagram"></i><strong>Instagram</strong></a></P>
-                        <P class="socialNetwork"><a href="mailto:cristinagreno@hotmail.com" target=”_blank”><i class="fas fa-envelope-square"></i><strong>Email</strong></a></P> 
+                    <div class="contForm__aside--netw d-flex justify-content-center">
+                        <P class="socialNetwork"><a href="https://www.facebook.com/cristina.greno.7" target=”_blank”><i class="fab fa-facebook"></i></a></P>
+                        <P class="socialNetwork"><a href="https://api.whatsapp.com/send?phone=5492614703937" target=”_blank”><i class="fab fa-whatsapp"></i></a></P>
+                        <P class="socialNetwork"><a href="https://instagram.com/cristinagreno?utm_medium=copy_link" target=”_blank”><i class="fab fa-instagram"></i></a></P>
+                        <P class="socialNetwork"><a href="mailto:cristinagreno@hotmail.com" target=”_blank”><i class="fas fa-envelope-square"></i></a></P> 
                     </div>                
                 </aside> 
             </section>
+
         </div>
+
     </main>
 
     <!--footer--> 
-    <footer class="container-fluid m-0 footerIndex">  
+    <footer class="container-fluid m-0 footerIndex"> 
+        <!--maps-->  
         <div class="row text-light d-flex justify-content-center align-items-center fs-6 fs-md-4 footerP">
             <div class="maps col-10 col-lg-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.332899013973!2d-68.87194303438397!3d-32.91580181839909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e099094b00d1b%3A0xfd1d54872e70d73d!2sCayetano%20Silva%20944%2C%20M5504HFH%20Godoy%20Cruz%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1634518932507!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+            <!--datos y logo-->
             <div class="infoContac p-4 text-center col-10 col-lg-4">
                 <div class="info">
                     <span><i class="fas fa-phone-alt"></i>+54 9 261 470-3937</span>
@@ -119,6 +129,8 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

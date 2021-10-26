@@ -24,9 +24,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--style-->
     <link rel="stylesheet" href="../style/main.css">
-    
 </head>
+
 <body class="body">
+    <!--navegador-->
     <header class="header container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light p-2">
             <div class="container-fluid w-100">
@@ -46,18 +47,20 @@
             </div>
         </nav> 
     </header>
-
-    <!--hero-->
+    
     <main class="mainCourse">
+
+        <!--hero-->
         <section class="container-fluid w-100 heroImgCursos">
             <div class="row d-flex align-items-end heroImgCursos__img1">                
                 <h2 class="p-5 display-1 fw-bold heroImgCursos__img1--subt">Cursos</h2>                
             </div>            
         </section>
 
-        <!--cursos carousel y texto-->
+        <!--carousel y texto-->
         <section class="container d-flex flex-column coursesText">
             <div class="row m-5 d-none d-lg-block d-flex justify-content-center coursesText__img2">
+                <!--carousel-->
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -70,6 +73,7 @@
                             <img src="../imagenes/Cristina/curso3.jpg" class="d-block img-fluid w-100" alt="mesón de trabajo">
                         </div>
                     </div>
+                    <!--button carousel-->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -80,6 +84,7 @@
                     </button>
                 </div> 
             </div>
+            <!--texto apertura-->
             <div class="row justify-content-center coursesText__p">
                 <p class="col-10 coursesText__p--parag">En los diferentes cursos te brindo todo lo que necesitas para que tu pintura se vea magnífica y, además, que disfrutes el proceso. Si no tienes experiencia y nunca a garraste un pincel, no importa!<br>Mi propósito es ayudarte en la búsqueda de tu camino en el arte por lo que estos cursos de pintura están orientados a mejorar los conocimientos  y habilidades personales para que puedas crear tu propia obra de arte. Recuerda que todos somos creativos, solo que no todos lo hemos explotado.<br>A continuación encontrarás las opciones con los cursos. Cualquier consulta podés contactarme por los distintos canales o en la pestaña de contacto, llená el formulario y te responderé a la brevedad. Empecemos!</p>
             </div>
@@ -89,6 +94,7 @@
 
         <section class="cursos p-md-3 p-0 justify-content-center container">
             <hr>
+            <!--cursos 1-->
             <article class="cardCurso row m-2 m-lg-5 text-center text-lg-start d-flex flex-wrap align-items-center justify-content-center">
                 <div class="col-10 col-md-4 m-1 m-lg-5 cardCurso__img">
                     <img src="../imagenes/Cristina/card2.png" alt="Taller Libre" data-aos="fade-right" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine" class="img">
@@ -100,6 +106,7 @@
                 </div>
             </article>
             <hr>
+            <!--cursos 2-->
             <article class="cardCurso row m-2 m-lg-5 text-center text-lg-start d-flex flex-wrap align-items-center justify-content-center">
                 <div class="col-10 col-lg-6 p-2 p-lg-3 cardCurso__text" data-aos="fade-right" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine">
                     <span class="h5 fw-bold p-1">Tecnicatura en Pintura con Espátula<br>Avalado por el Conservatorio Grassi</span>
@@ -111,6 +118,7 @@
                 </div>
             </article>
             <hr>
+            <!--cursos 3-->
             <article class="cardCurso row m-2 m-lg-5 text-center text-lg-start d-flex flex-wrap justify-content-center align-items-center">
                 <div class="col-10 col-md-4 m-1 m-lg-5 cardCurso__img">
                     <img src="../imagenes/Cristina/card1.png" alt="Pintura Decorativa" data-aos="fade-right" data-aos-offset="300" data-aos-once="true" data-aos-easing="ease-in-sine" class="img">
@@ -124,7 +132,7 @@
             <hr>
         </section>
 
-        <!--botton-->
+        <!--button-->
 
         <section class="container">
             <div class="d-flex justify-content-center pt-5 btnCourse">
@@ -136,8 +144,10 @@
         </section> 
 
         <!--comentarios-->
+
         <section class="container-fluid d-flex flex-wrap align-items-center comments">
             <div class="row d-flex justify-content-center">
+                <!--comentarios 1-->
                 <article class="col-xl-3 col-10 card m-3 comments__card">
                     <div class="row g-0">
                         <div class="col-md-4 pt-4 d-flex justify-content-center">
@@ -151,6 +161,7 @@
                         </div>
                     </div>
                 </article>
+                <!--comentarios 2-->
                 <article class="col-xl-3 col-10 card m-3 comments__card">
                     <div class="row g-0">
                         <div class="col-md-4 pt-4 d-flex justify-content-center">
@@ -164,6 +175,7 @@
                         </div>
                     </div>
                 </article>
+                <!--comentarios 3-->
                 <article class="col-xl-3 col-10 card m-3 comments__card">
                     <div class="row g-0">
                         <div class="col-md-4 pt-4 d-flex justify-content-center">
@@ -179,9 +191,11 @@
                 </article>
             </div>
         </section>
-            
+
+    </main>        
 
     <!--Footer-->
+    <!--iconos redes-->
     <footer class="container-fluid footerIndex">
         <div class=" row footer__net">
             <div class="col-12 d-flex justify-content-center fs-6 fs-md-3 mb-3 footer__netLink">
@@ -191,6 +205,7 @@
                 <P class="linkIcon"><a class="linkIcon__a" href="mailto:cristinagreno@hotmail.com" target=”_blank”><strong><i class="far fa-envelope"></i></strong></a></P> 
             </div>
         </div>
+        <!--datos y logo-->
         <div class="row text-light fs-6 fs-md-4 p-2 footerP">
             <div class="info">
                 <span><i class="fas fa-phone-alt"></i>+54 9 261 470-3937</span>
@@ -206,10 +221,12 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </footer>
+    
     <script>
         AOS.init();
     </script>
+
 </body>
 </html>

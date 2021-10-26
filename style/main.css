@@ -313,6 +313,15 @@
   font-size: 62.5%;
 }
 
+.body404 {
+  background-color: #333;
+  background-image: url(../imagenes/roto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
 .body {
   overflow-x: hidden !important;
 }
@@ -348,6 +357,7 @@
           box-shadow: 1px 1px 10px #000;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 5px solid #333;
 }
 
 @media screen and (min-width: 320px) {
@@ -565,22 +575,6 @@
 
 .comments .fas {
   font-size: 4.5em;
-}
-
-/*--comments--*/
-.comments {
-  background-image: url(../imagenes/swirl_pattern.png);
-  height: 50%;
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-
-.fas {
-  font-size: 4.5em;
-}
-
-.card-text {
-  font-size: .9em;
 }
 
 .obras__p {
@@ -813,6 +807,24 @@
   margin-top: 3em;
   margin-bottom: 5em;
   color: #fff;
+}
+
+@media screen and (min-width: 320px) {
+  .contForm__form, .contForm__aside {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contForm__form, .contForm__aside {
+    margin-bottom: 3em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contForm__form, .contForm__aside {
+    margin-bottom: 5em;
+  }
 }
 
 .contForm__form--inp > input, .contForm__form--inp > textarea {
@@ -1054,15 +1066,6 @@
   padding-right: .5em;
   text-align: center;
   margin-top: 2em;
-}
-
-.body404 {
-  background-color: #333;
-  background-image: url(../imagenes/roto.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
 }
 
 .cont a {
