@@ -133,7 +133,13 @@
 #acuarela-tiza:checked ~ #galeria > .contentPicture #mixto {
     display: none;
 }
-
+#todo:checked ~ .gallery__todo, #oleo:checked ~ .gallery__oleo,
+#acrilico:checked ~ .gallery__acrilico, #mixto:checked ~ .gallery__mixto,
+#acuarela-tiza:checked ~ .gallery__acuarela-tiza {
+    background: $fondoLila;
+    border: 1px solid transparent;
+    color: $white;
+}
 
 .gallery__input {
     visibility: hidden;

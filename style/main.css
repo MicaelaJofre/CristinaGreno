@@ -772,6 +772,14 @@
   display: none;
 }
 
+#todo:checked ~ .gallery__todo, #oleo:checked ~ .gallery__oleo,
+#acrilico:checked ~ .gallery__acrilico, #mixto:checked ~ .gallery__mixto,
+#acuarela-tiza:checked ~ .gallery__acuarela-tiza {
+  background: #615ba565;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
 .gallery__input {
   visibility: hidden;
   -webkit-user-select: none;
