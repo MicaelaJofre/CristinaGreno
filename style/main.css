@@ -777,7 +777,6 @@
 #acuarela-tiza:checked ~ .gallery__acuarela-tiza {
   background: #615ba565;
   border: 1px solid transparent;
-  color: #fff;
 }
 
 .gallery__input {
