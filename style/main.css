@@ -42,7 +42,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:hover {
-  color: #ffeba1c7 !important;
+  color: #ffeba186 !important;
 }
 
 .navbar-toggler:hover {
@@ -914,7 +914,7 @@
 }
 
 .socialNetwork > a:hover {
-  color: #ffeba1c7;
+  color: #ffeba186;
 }
 
 .bodyCurriculum {
@@ -985,7 +985,7 @@
 }
 
 .footer__netLink .linkIcon__a:hover {
-  color: #ffeba1c7;
+  color: #61572d69;
 }
 
 .footerP {
