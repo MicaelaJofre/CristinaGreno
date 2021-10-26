@@ -147,7 +147,7 @@
 .gallery__acuarela-tiza {
     font-weight: bolder;
     background: transparent;
-    color: #333;
+    color: $principal;
     border: 1px solid $lila;
     box-shadow: 1px 1px 5px $lila;
     padding: .8em 1.5em;  
@@ -170,9 +170,9 @@
         display: inline-block;
     }
     &:hover {
-        background: #615ba565;
+        background: $fondoLila;
         border: 1px solid transparent;
-        color: #fff;
+        color: $white;
     }
 }
 
