@@ -43,10 +43,21 @@
         }
     }
 }
-
+//imagen
 .curriculum__text--img {
     width: 100%;
     height:auto;
     opacity: .5;
     margin: 1.5em 0;
+}
+//lista ul
+.curriculumUl {
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.205);
+    border-radius: .25em;
+    &__list {
+        list-style-position: inside;
+        padding: .2em;
+        text-align: justify;
+    }
 }
