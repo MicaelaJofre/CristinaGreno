@@ -18,26 +18,26 @@
         &--h2 {
             color:$colorh2;
             overflow: hidden;
-            -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            @-webkit-keyframes slide-right {
+            -webkit-animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @-webkit-keyframes slide-bottom {
                 0% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
+                    -webkit-transform: translateY(0);
+                        transform: translateY(0);
                 }
                 100% {
-                    -webkit-transform: translateX(100px);
-                    transform: translateX(100px);
+                    -webkit-transform: translateY(100px);
+                        transform: translateY(100px);
                 }
             }
-            @keyframes slide-right {
+            @keyframes slide-bottom {
                 0% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
+                    -webkit-transform: translateY(0);
+                        transform: translateY(0);
                 }
                 100% {
-                    -webkit-transform: translateX(50px);
-                    transform: translateX(50px);
+                    -webkit-transform: translateY(100px);
+                        transform: translateY(100px);
                 }
             }
         }
