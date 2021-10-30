@@ -16,12 +16,14 @@
     @include breakpoint(laptop) {
         font-size: 1.2em;
         margin: $marginTexty 5em;
+        text-align: center;
     }
     @include breakpoint(desktop) {
         font-size: $font-text;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 }
 

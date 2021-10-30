@@ -470,12 +470,14 @@
   .coursesText .coursesText__p--parag {
     font-size: 1.2em;
     margin-top: 2em;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .coursesText .coursesText__p--parag {
     font-size: 0.9em;
+    text-align: center;
   }
 }
 
@@ -601,6 +603,7 @@
   .obras__p {
     font-size: 1.2em;
     margin: 7em 5em;
+    text-align: center;
   }
 }
 
@@ -610,6 +613,7 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 }
 
