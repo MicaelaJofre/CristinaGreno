@@ -453,7 +453,7 @@
 }
 
 .coursesText .coursesText__p--parag {
-  text-align: center;
+  text-align: start;
   font-size: 0.9em;
   margin-bottom: 0;
   line-height: 1.8em;
@@ -585,7 +585,7 @@
 
 /*--texto apertura--*/
 .obras__p {
-  text-align: center;
+  text-align: start;
   font-size: 0.9em;
   line-height: 1.8em;
 }

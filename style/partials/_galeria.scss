@@ -6,7 +6,7 @@
 
 /*--texto apertura--*/
 .obras__p {
-    text-align: center;
+    text-align: start;
     font-size: $font-text;
     line-height: $spaceLetters;
     @include breakpoint(mobile) {
