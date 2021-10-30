@@ -63,7 +63,7 @@
 
 @media screen and (min-width: 320px) {
   .heroImgIndex__img1 {
-    height: 45vh;
+    height: 55vh;
     text-align: center;
   }
 }
@@ -124,7 +124,7 @@
 
 @media screen and (min-width: 320px) {
   .heroImgGaleria__img1 {
-    height: 45vh;
+    height: 55vh;
     text-align: center;
   }
 }
@@ -185,7 +185,7 @@
 
 @media screen and (min-width: 320px) {
   .heroImgCursos__img1 {
-    height: 45vh;
+    height: 55vh;
     text-align: center;
   }
 }
@@ -246,7 +246,7 @@
 
 @media screen and (min-width: 320px) {
   .heroImgRecom__img1 {
-    height: 45vh;
+    height: 55vh;
     text-align: center;
   }
 }
@@ -453,7 +453,7 @@
 }
 
 .coursesText .coursesText__p--parag {
-  text-align: start;
+  text-align: center;
   font-size: 0.9em;
   margin-bottom: 0;
   line-height: 1.8em;
@@ -470,14 +470,12 @@
   .coursesText .coursesText__p--parag {
     font-size: 1.2em;
     margin-top: 2em;
-    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .coursesText .coursesText__p--parag {
     font-size: 0.9em;
-    text-align: center;
   }
 }
 
@@ -587,7 +585,7 @@
 
 /*--texto apertura--*/
 .obras__p {
-  text-align: start;
+  text-align: center;
   font-size: 0.9em;
   line-height: 1.8em;
 }
@@ -603,7 +601,6 @@
   .obras__p {
     font-size: 1.2em;
     margin: 7em 5em;
-    text-align: center;
   }
 }
 
@@ -613,7 +610,6 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
   }
 }
 

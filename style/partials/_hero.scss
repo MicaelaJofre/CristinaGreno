@@ -11,7 +11,7 @@
             color: $colorh2;
             font-family: $fontPrincipal;
             @include breakpoint(mobile) {
-                height: 45vh;
+                height: 55vh;
                 text-align: center;
             }
             @include breakpoint(laptop) {

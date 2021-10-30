@@ -13,7 +13,7 @@
         }
     }
     .coursesText__p--parag {
-        text-align: start;
+        text-align: center;
         font-size: $font-text;
         margin-bottom: 0;
         line-height: $spaceLetters;
@@ -24,12 +24,10 @@
         }
         @include breakpoint(laptop) {
             font-size: 1.2em;
-            margin-top: $marginTextx;
-            text-align: center;  
+            margin-top: $marginTextx; 
         }
         @include breakpoint(desktop) {
             font-size: $font-text;
-            text-align: center;
         }
     }
 }
