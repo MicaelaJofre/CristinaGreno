@@ -14,10 +14,9 @@
     }
     .coursesText__p--parag {
         text-align: center;
-        font-size: $font-text;
         margin-bottom: 0;
+        font-size: $font-text;
         line-height: $spaceLetters;
-
         @include breakpoint(mobile) {
             font-size: 1.2em;
             margin-top: $marginTextx;  
@@ -37,7 +36,7 @@
 .cursos {
     margin-top: $marginTexty;
     overflow-x: hidden;
-    >hr {
+    hr {
         color: #29274b;
         height: 3px;
         width: 90%;
@@ -83,16 +82,7 @@
         text-align: center;
     }
     &__btn {
-        background: transparent;
-        color: $principal;
-        border: 1px solid $lila;
-        box-shadow: 1px 1px 5px $lila;
-        padding: .8em 3em;
-        &:hover {
-            background: $fondoLila;
-            border: 1px solid transparent;
-            color: $white;
-        }
+        @include btn;
     }
 }
 /*--comments--*/

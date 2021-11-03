@@ -357,6 +357,29 @@
           box-shadow: 1px 1px 10px #000;
 }
 
+.btnCourse__btn {
+  background: transparent;
+  color: #333;
+  border: 1px solid #6F69AC;
+  -webkit-box-shadow: 1px 1px 5px #6F69AC;
+          box-shadow: 1px 1px 5px #6F69AC;
+  padding: .8em 3em;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: .25rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: .25em;
+}
+
+.btnCourse__btn:hover {
+  background: #615ba565;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
 .recommend {
   overflow-x: hidden;
 }
@@ -454,8 +477,8 @@
 
 .coursesText .coursesText__p--parag {
   text-align: center;
-  font-size: 0.9em;
   margin-bottom: 0;
+  font-size: 0.9em;
   line-height: 1.8em;
 }
 
@@ -485,7 +508,7 @@
   overflow-x: hidden;
 }
 
-.cursos > hr {
+.cursos hr {
   color: #29274b;
   height: 3px;
   width: 90%;
@@ -494,21 +517,21 @@
 }
 
 @media screen and (min-width: 320px) {
-  .cursos > hr {
+  .cursos hr {
     margin-left: 1em;
     margin-right: 1em;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .cursos > hr {
+  .cursos hr {
     margin-left: 1em;
     margin-right: 1em;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .cursos > hr {
+  .cursos hr {
     margin-left: 5em;
     margin-right: 5em;
   }
@@ -554,6 +577,14 @@
   -webkit-box-shadow: 1px 1px 5px #6F69AC;
           box-shadow: 1px 1px 5px #6F69AC;
   padding: .8em 3em;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: .25rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: .25em;
 }
 
 .btnCourse__btn:hover {
@@ -677,20 +708,30 @@
 .gallery__acrilico,
 .gallery__mixto,
 .gallery__acuarela-tiza {
-  font-weight: bolder;
   background: transparent;
   color: #333;
   border: 1px solid #6F69AC;
   -webkit-box-shadow: 1px 1px 5px #6F69AC;
           box-shadow: 1px 1px 5px #6F69AC;
-  padding: .5em 1.5em;
+  padding: .8em 3em;
   cursor: pointer;
+  font-weight: bolder;
   border-radius: .25rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   margin: .25em;
+}
+
+.gallery__todo:hover,
+.gallery__oleo:hover,
+.gallery__acrilico:hover,
+.gallery__mixto:hover,
+.gallery__acuarela-tiza:hover {
+  background: #615ba565;
+  border: 1px solid transparent;
+  color: #fff;
 }
 
 @media screen and (min-width: 320px) {
@@ -728,16 +769,6 @@
     padding: .5em 1.5em;
     display: inline-block;
   }
-}
-
-.gallery__todo:hover,
-.gallery__oleo:hover,
-.gallery__acrilico:hover,
-.gallery__mixto:hover,
-.gallery__acuarela-tiza:hover {
-  background: #615ba565;
-  border: 1px solid transparent;
-  color: #fff;
 }
 
 /*--galeria--*/

@@ -76,16 +76,7 @@
 .gallery__acrilico,
 .gallery__mixto,
 .gallery__acuarela-tiza {
-    font-weight: bolder;
-    background: transparent;
-    color: $principal;
-    border: 1px solid $lila;
-    box-shadow: 1px 1px 5px $lila;
-    padding: .5em 1.5em;  
-    cursor: pointer;
-    border-radius: .25rem;
-    user-select: none;
-    margin: .25em;
+    @include btn;
     @include breakpoint(mobile) {
         padding: .5em 1em;
         margin: 0 .5em;
@@ -99,11 +90,6 @@
     @include breakpoint(desktop) {
         padding: .5em 1.5em;  
         display: inline-block;
-    }
-    &:hover {
-        background: $fondoLila;
-        border: 1px solid transparent;
-        color: $white;
     }
 }
 

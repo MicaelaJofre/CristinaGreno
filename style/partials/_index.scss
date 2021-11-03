@@ -20,6 +20,9 @@
 .imgFru {
     box-shadow: $shadowBox1;
 }
-
-//boton del index está en la sección de curso
+.btnCourse {
+    &__btn {
+        @include btn;
+    }
+}
 
