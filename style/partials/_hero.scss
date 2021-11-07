@@ -1,6 +1,6 @@
 @import "./mixins";
 
-@each $seccion in Index, Galeria, Cursos, Recom {
+@each $seccion in Index, Recom {
     
     .heroImg#{$seccion}{
         color:$principal;
@@ -19,7 +19,59 @@
                 text-align: center;
             }
             @include breakpoint(desktop) {
-                height: 100vh;
+                height: 95vh;
+                text-align: start;
+            }
+        }
+        &__img1--subt {
+            overflow: hidden;
+            -webkit-animation: slide-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            @-webkit-keyframes slide-top {
+                0% {
+                    -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                }
+                100% {
+                    -webkit-transform: translateY(-100px);
+                        transform: translateY(-100px);
+                }
+            }
+            @keyframes slide-top {
+                0% {
+                    -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                }
+                100% {
+                    -webkit-transform: translateY(-50px);
+                        transform: translateY(-50px);
+                }
+            }
+        }
+        
+    }
+}
+
+@each $seccion in Galeria, Cursos {
+    
+    .heroImg#{$seccion}{
+        color:$principal;
+        &__img1 {
+            background-image: url(../imagenes/hero/#{$seccion}.png);
+            background-size: cover;
+            background-attachment: fixed;
+            color: $colorh2;
+            font-family: $fontPrincipal;
+            @include breakpoint(mobile) {
+                height: 56vh;
+                text-align: center;
+            }
+            @include breakpoint(laptop) {
+                height: 70vh;
+                text-align: center;
+            }
+            @include breakpoint(desktop) {
+                height: 70vh;
                 text-align: start;
             }
         }

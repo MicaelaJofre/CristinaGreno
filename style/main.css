@@ -23,30 +23,41 @@
   }
 }
 
-.navbar-brand {
+.header .navbar-brand {
+  color: #fff;
   font-family: "Allura", cursive;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.navbar-toggler {
+.header .navbar-brand:hover {
+  color: #ffda9e;
+}
+
+.header .navbar-toggler {
   background: #6F69AC;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.navbar-nav {
+.header .navbar-toggler:hover {
+  background: #8a85bd;
+}
+
+.header .navbar-nav {
   font-size: 1.7em;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-brand:hover {
-  color: #ffeba186 !important;
+.header .navbar-nav .nav-link {
+  color: #fff;
 }
 
-.navbar-toggler:hover {
-  background: #8a85bd;
+.header .navbar-nav .nav-link:hover {
+  color: #ffda9e;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .heroImgIndex {
@@ -77,12 +88,73 @@
 
 @media screen and (min-width: 1200px) {
   .heroImgIndex__img1 {
-    height: 100vh;
+    height: 95vh;
     text-align: start;
   }
 }
 
 .heroImgIndex__img1--subt {
+  overflow: hidden;
+  -webkit-animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+
+.heroImgRecom {
+  color: #333;
+}
+
+.heroImgRecom__img1 {
+  background-image: url(../imagenes/hero/Recom.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgba(240, 255, 255, 0.61);
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+  .heroImgRecom__img1 {
+    height: 56vh;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heroImgRecom__img1 {
+    height: 70vh;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heroImgRecom__img1 {
+    height: 95vh;
+    text-align: start;
+  }
+}
+
+.heroImgRecom__img1--subt {
   overflow: hidden;
   -webkit-animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -138,7 +210,7 @@
 
 @media screen and (min-width: 1200px) {
   .heroImgGaleria__img1 {
-    height: 100vh;
+    height: 70vh;
     text-align: start;
   }
 }
@@ -199,73 +271,12 @@
 
 @media screen and (min-width: 1200px) {
   .heroImgCursos__img1 {
-    height: 100vh;
+    height: 70vh;
     text-align: start;
   }
 }
 
 .heroImgCursos__img1--subt {
-  overflow: hidden;
-  -webkit-animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-}
-
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-    transform: translateY(-50px);
-  }
-}
-
-.heroImgRecom {
-  color: #333;
-}
-
-.heroImgRecom__img1 {
-  background-image: url(../imagenes/hero/Recom.png);
-  background-size: cover;
-  background-attachment: fixed;
-  color: rgba(240, 255, 255, 0.61);
-  font-family: "Open Sans", sans-serif;
-}
-
-@media screen and (min-width: 320px) {
-  .heroImgRecom__img1 {
-    height: 56vh;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .heroImgRecom__img1 {
-    height: 70vh;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .heroImgRecom__img1 {
-    height: 100vh;
-    text-align: start;
-  }
-}
-
-.heroImgRecom__img1--subt {
   overflow: hidden;
   -webkit-animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -1083,7 +1094,7 @@
 }
 
 .socialNetwork > a:hover {
-  color: #ffeba186;
+  color: #ffda9e;
 }
 
 .bodyCurriculum {
@@ -1150,10 +1161,33 @@
   border-radius: .25em;
 }
 
+@media screen and (min-width: 320px) {
+  .curriculumUl {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .curriculumUl {
+    text-align: start;
+  }
+}
+
 .curriculumUl__list {
-  list-style-position: inside;
   padding: .2em;
-  text-align: justify;
+  text-align: start;
+}
+
+@media screen and (min-width: 320px) {
+  .curriculumUl__list {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .curriculumUl__list {
+    margin-bottom: 0;
+  }
 }
 
 .footerIndex {

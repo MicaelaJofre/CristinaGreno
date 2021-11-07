@@ -55,9 +55,20 @@
     font-size: 1.2em;
     background: rgba(0, 0, 0, 0.205);
     border-radius: .25em;
+    @include breakpoint(mobile) {
+        text-align: center;
+    }
+    @include breakpoint(desktop) {
+        text-align: start;
+    }
     &__list {
-        list-style-position: inside;
         padding: .2em;
-        text-align: justify;
+        text-align: start;
+        @include breakpoint(mobile) {
+            margin-bottom: 1em;
+        }
+        @include breakpoint(desktop) {
+            margin-bottom: 0;
+        }
     }
 }
