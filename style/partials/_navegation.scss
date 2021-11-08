@@ -20,6 +20,7 @@
     .navbar-toggler {
         background: $lila;
         transition: .5s;
+        border: 1;
         &:hover {
             background: $shadowLila;
         }

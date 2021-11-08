@@ -38,6 +38,7 @@
   background: #6F69AC;
   -webkit-transition: .5s;
   transition: .5s;
+  border: 1;
 }
 
 .header .navbar-toggler:hover {
@@ -888,16 +889,16 @@
   position: absolute;
   text-align: center;
   color: #fff;
-  bottom: 33%;
-  right: 5%;
+  bottom: 65px;
+  right: 20px;
 }
 
 .picture__info .tipo {
   font-size: small;
   position: absolute;
   color: #fff;
-  bottom: 23%;
-  right: 5%;
+  bottom: 40px;
+  right: 20px;
 }
 
 .picture:hover .picture__info {
